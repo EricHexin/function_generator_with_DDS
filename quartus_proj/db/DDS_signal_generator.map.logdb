@@ -1,1 +1,4 @@
 v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated|mac_out6,

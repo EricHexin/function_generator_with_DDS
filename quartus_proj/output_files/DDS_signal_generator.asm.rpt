@@ -1,5 +1,5 @@
 Assembler report for DDS_signal_generator
-Mon Feb 10 20:12:07 2025
+Tue Feb 11 18:26:32 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/FPGA_projects/DDS_signal_generator/quartus_proj/output_files/DDS_signal_generator.sof
+  5. Assembler Device Options: D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/output_files/DDS_signal_generator.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Feb 10 20:12:07 2025 ;
+; Assembler Status      ; Successful - Tue Feb 11 18:26:32 2025 ;
 ; Revision Name         ; DDS_signal_generator                  ;
 ; Top-level Entity Name ; dds                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                ;
-+------------------------------------------------------------------------------------------+
-; File Name                                                                                ;
-+------------------------------------------------------------------------------------------+
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/output_files/DDS_signal_generator.sof ;
-+------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                            ;
++------------------------------------------------------------------------------------------------------+
+; File Name                                                                                            ;
++------------------------------------------------------------------------------------------------------+
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/output_files/DDS_signal_generator.sof ;
++------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/FPGA_projects/DDS_signal_generator/quartus_proj/output_files/DDS_signal_generator.sof ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                           ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Device         ; EP4CE10F17C8                                                                                      ;
-; JTAG usercode  ; 0x002A3B7C                                                                                        ;
-; Checksum       ; 0x002A3B7C                                                                                        ;
-+----------------+---------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/output_files/DDS_signal_generator.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                       ;
++----------------+---------------------------------------------------------------------------------------------------------------+
+; Device         ; EP4CE10F17C8                                                                                                  ;
+; JTAG usercode  ; 0x002A99F7                                                                                                    ;
+; Checksum       ; 0x002A99F7                                                                                                    ;
++----------------+---------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Feb 10 20:12:06 2025
+    Info: Processing started: Tue Feb 11 18:26:32 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DDS_signal_generator -c DDS_signal_generator
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4546 megabytes
-    Info: Processing ended: Mon Feb 10 20:12:07 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Tue Feb 11 18:26:32 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

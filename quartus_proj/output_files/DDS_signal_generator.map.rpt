@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DDS_signal_generator
-Mon Feb 10 20:12:01 2025
+Tue Feb 11 18:26:26 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,20 +14,22 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Inverted Register Statistics
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Analysis & Synthesis IP Cores Summary
+ 11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Source assignments for dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component|altsyncram_v6a1:auto_generated
- 14. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst3
- 15. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2
- 16. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1
- 17. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst0
- 18. Parameter Settings for User Entity Instance: dds_ctrl:dds_ctrl_inst
- 19. Parameter Settings for User Entity Instance: dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component
+ 14. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1
+ 15. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst0
+ 16. Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2
+ 17. Parameter Settings for User Entity Instance: dds_ctrl:dds_ctrl_inst
+ 18. Parameter Settings for User Entity Instance: dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component
+ 19. Parameter Settings for Inferred Entity Instance: dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0
  20. altsyncram Parameter Settings by Entity Instance
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 21. lpm_mult Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "key_ctrl:key_ctrl_inst"
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -53,19 +55,19 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 10 20:12:01 2025            ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 11 18:26:26 2025            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DDS_signal_generator                             ;
 ; Top-level Entity Name              ; dds                                              ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 192                                              ;
-;     Total combinational functions  ; 168                                              ;
-;     Dedicated logic registers      ; 148                                              ;
-; Total registers                    ; 148                                              ;
+; Total logic elements               ; 234                                              ;
+;     Total combinational functions  ; 208                                              ;
+;     Dedicated logic registers      ; 135                                              ;
+; Total registers                    ; 135                                              ;
 ; Total pins                         ; 15                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 131,072                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 6                                                ;
 ; Total PLLs                         ; 0                                                ;
 +------------------------------------+--------------------------------------------------+
 
@@ -174,30 +176,36 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                    ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                       ; Library ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; ../rtl/button_filter.v                          ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator/rtl/button_filter.v                                          ;         ;
-; ../rtl/key_ctrl.v                               ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator/rtl/key_ctrl.v                                               ;         ;
-; ../rtl/dds.v                                    ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator/rtl/dds.v                                                    ;         ;
-; ../rtl/dds_ctrl.v                               ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator/rtl/dds_ctrl.v                                               ;         ;
-; IP_core_files/rom_4_waveforms/rom_4_waveforms.v ; yes             ; User Wizard-Generated File             ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v ;         ;
-; altsyncram.tdf                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
-; stratix_ram_block.inc                           ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
-; lpm_mux.inc                                     ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
-; lpm_decode.inc                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
-; aglobal130.inc                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
-; a_rdenreg.inc                                   ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
-; altrom.inc                                      ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altrom.inc                   ;         ;
-; altram.inc                                      ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altram.inc                   ;         ;
-; altdpram.inc                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; db/altsyncram_v6a1.tdf                          ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/db/altsyncram_v6a1.tdf                          ;         ;
-; 4_wave_memory.mif                               ; yes             ; Auto-Found Memory Initialization File  ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/4_wave_memory.mif                               ;         ;
-; db/decode_c8a.tdf                               ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/db/decode_c8a.tdf                               ;         ;
-; db/mux_3nb.tdf                                  ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/db/mux_3nb.tdf                                  ;         ;
-+-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
++-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                   ; Library ;
++-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; ../rtl/button_filter.v                          ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/button_filter.v                                          ;         ;
+; ../rtl/key_ctrl.v                               ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/key_ctrl.v                                               ;         ;
+; ../rtl/dds.v                                    ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds.v                                                    ;         ;
+; ../rtl/dds_ctrl.v                               ; yes             ; User Verilog HDL File                  ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds_ctrl.v                                               ;         ;
+; IP_core_files/rom_4_waveforms/rom_4_waveforms.v ; yes             ; User Wizard-Generated File             ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v ;         ;
+; altsyncram.tdf                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altsyncram.tdf                           ;         ;
+; stratix_ram_block.inc                           ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/stratix_ram_block.inc                    ;         ;
+; lpm_mux.inc                                     ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_mux.inc                              ;         ;
+; lpm_decode.inc                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_decode.inc                           ;         ;
+; aglobal130.inc                                  ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/aglobal130.inc                           ;         ;
+; a_rdenreg.inc                                   ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/a_rdenreg.inc                            ;         ;
+; altrom.inc                                      ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altrom.inc                               ;         ;
+; altram.inc                                      ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altram.inc                               ;         ;
+; altdpram.inc                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altdpram.inc                             ;         ;
+; db/altsyncram_v6a1.tdf                          ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/db/altsyncram_v6a1.tdf                          ;         ;
+; 4_wave_memory.mif                               ; yes             ; Auto-Found Memory Initialization File  ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/4_wave_memory.mif                               ;         ;
+; db/decode_c8a.tdf                               ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/db/decode_c8a.tdf                               ;         ;
+; db/mux_3nb.tdf                                  ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/db/mux_3nb.tdf                                  ;         ;
+; lpm_mult.tdf                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_mult.tdf                             ;         ;
+; lpm_add_sub.inc                                 ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/lpm_add_sub.inc                          ;         ;
+; multcore.inc                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/multcore.inc                             ;         ;
+; bypassff.inc                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/bypassff.inc                             ;         ;
+; altshift.inc                                    ; yes             ; Megafunction                           ; c:/fpga_dev_softwares/quartus_ii_13p0/quartus/libraries/megafunctions/altshift.inc                             ;         ;
+; db/mult_rgt.tdf                                 ; yes             ; Auto-Generated Megafunction            ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/db/mult_rgt.tdf                                 ;         ;
++-------------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -205,29 +213,29 @@ applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 192           ;
+; Estimated Total logic elements              ; 234           ;
 ;                                             ;               ;
-; Total combinational functions               ; 168           ;
+; Total combinational functions               ; 208           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 29            ;
-;     -- 3 input functions                    ; 15            ;
-;     -- <=2 input functions                  ; 124           ;
+;     -- 4 input functions                    ; 19            ;
+;     -- 3 input functions                    ; 77            ;
+;     -- <=2 input functions                  ; 112           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 62            ;
-;     -- arithmetic mode                      ; 106           ;
+;     -- normal mode                          ; 53            ;
+;     -- arithmetic mode                      ; 155           ;
 ;                                             ;               ;
-; Total registers                             ; 148           ;
-;     -- Dedicated logic registers            ; 148           ;
+; Total registers                             ; 135           ;
+;     -- Dedicated logic registers            ; 135           ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
 ; I/O pins                                    ; 15            ;
 ; Total memory bits                           ; 131072        ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
+; Embedded Multiplier 9-bit elements          ; 6             ;
 ; Maximum fan-out node                        ; sys_clk~input ;
-; Maximum fan-out                             ; 165           ;
-; Total fan-out                               ; 1265          ;
-; Average fan-out                             ; 3.49          ;
+; Maximum fan-out                             ; 152           ;
+; Total fan-out                               ; 1323          ;
+; Average fan-out                             ; 3.35          ;
 +---------------------------------------------+---------------+
 
 
@@ -236,17 +244,18 @@ applicable agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |dds                                         ; 168 (5)           ; 148 (0)      ; 131072      ; 0            ; 0       ; 0         ; 15   ; 0            ; |dds                                                                                                                                         ; work         ;
-;    |dds_ctrl:dds_ctrl_inst|                  ; 44 (36)           ; 60 (58)      ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst                                                                                                                  ; work         ;
+; |dds                                         ; 208 (4)           ; 135 (0)      ; 131072      ; 6            ; 0       ; 3         ; 15   ; 0            ; |dds                                                                                                                                         ; work         ;
+;    |dds_ctrl:dds_ctrl_inst|                  ; 107 (71)          ; 60 (58)      ; 131072      ; 6            ; 0       ; 3         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst                                                                                                                  ; work         ;
+;       |lpm_mult:Mult0|                       ; 28 (0)            ; 0 (0)        ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0                                                                                                   ; work         ;
+;          |mult_rgt:auto_generated|           ; 28 (28)           ; 0 (0)        ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated                                                                           ; work         ;
 ;       |rom_4_waveforms:rom_4_waveforms_inst| ; 8 (0)             ; 2 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst                                                                             ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 8 (0)             ; 2 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component                                             ; work         ;
 ;             |altsyncram_v6a1:auto_generated| ; 8 (0)             ; 2 (2)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component|altsyncram_v6a1:auto_generated              ; work         ;
 ;                |mux_3nb:mux2|                ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component|altsyncram_v6a1:auto_generated|mux_3nb:mux2 ; work         ;
-;    |key_ctrl:key_ctrl_inst|                  ; 119 (6)           ; 88 (4)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst                                                                                                                  ; work         ;
+;    |key_ctrl:key_ctrl_inst|                  ; 97 (13)           ; 75 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst                                                                                                                  ; work         ;
 ;       |button_filter:button_filter_inst0|    ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst0                                                                                ; work         ;
 ;       |button_filter:button_filter_inst1|    ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1                                                                                ; work         ;
 ;       |button_filter:button_filter_inst2|    ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2                                                                                ; work         ;
-;       |button_filter:button_filter_inst3|    ; 29 (29)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst3                                                                                ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -260,13 +269,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+----------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                 ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                  ; IP Include File                                                                                    ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst ; D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 3           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 6           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 3           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                             ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                  ; IP Include File                                                                                                ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |dds|dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst ; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -274,24 +301,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 148   ;
+; Total registers                              ; 135   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 80    ;
-; Number of registers using Asynchronous Clear ; 146   ;
+; Number of registers using Synchronous Load   ; 60    ;
+; Number of registers using Asynchronous Clear ; 128   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; key_ctrl:key_ctrl_inst|wave_sel[3]     ; 3       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -299,11 +316,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst0|cnt_20ms[9]  ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1|cnt_20ms[11] ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2|cnt_20ms[14] ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst3|cnt_20ms[11] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|wave_sel[0]                                    ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst0|cnt_20ms[19] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1|cnt_20ms[7]  ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |dds|key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2|cnt_20ms[19] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
@@ -314,26 +329,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                   ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst3 ;
-+----------------+----------------------+---------------------------------------------------------------+
-; Parameter Name ; Value                ; Type                                                          ;
-+----------------+----------------------+---------------------------------------------------------------+
-; CNT_MAX        ; 11110100001000111111 ; Unsigned Binary                                               ;
-+----------------+----------------------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2 ;
-+----------------+----------------------+---------------------------------------------------------------+
-; Parameter Name ; Value                ; Type                                                          ;
-+----------------+----------------------+---------------------------------------------------------------+
-; CNT_MAX        ; 11110100001000111111 ; Unsigned Binary                                               ;
-+----------------+----------------------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -356,12 +351,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key_ctrl:key_ctrl_inst|button_filter:button_filter_inst2 ;
++----------------+----------------------+---------------------------------------------------------------+
+; Parameter Name ; Value                ; Type                                                          ;
++----------------+----------------------+---------------------------------------------------------------+
+; CNT_MAX        ; 11110100001000111111 ; Unsigned Binary                                               ;
++----------------+----------------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: dds_ctrl:dds_ctrl_inst ;
 +----------------+----------------------------------+-----------------+
 ; Parameter Name ; Value                            ; Type            ;
 +----------------+----------------------------------+-----------------+
-; freq_word      ; 00000000000000001010011111000101 ; Unsigned Binary ;
+; freq_word_incr ; 00000000010000011000100100110111 ; Unsigned Binary ;
+; freq_word      ; 00000101000111101011100001010010 ; Unsigned Binary ;
 ; pha_word       ; 010000000000                     ; Unsigned Binary ;
 +----------------+----------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -428,6 +434,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+------------------------+
+; Parameter Name                                 ; Value        ; Type                   ;
++------------------------------------------------+--------------+------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE         ;
+; LPM_WIDTHA                                     ; 23           ; Untyped                ;
+; LPM_WIDTHB                                     ; 32           ; Untyped                ;
+; LPM_WIDTHP                                     ; 55           ; Untyped                ;
+; LPM_WIDTHR                                     ; 55           ; Untyped                ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                ;
+; LATENCY                                        ; 0            ; Untyped                ;
+; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped                ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                ;
+; USE_EAB                                        ; OFF          ; Untyped                ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                ;
+; CBXI_PARAMETER                                 ; mult_rgt     ; Untyped                ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                ;
++------------------------------------------------+--------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                                        ;
 +-------------------------------------------+---------------------------------------------------------------------------------------------+
@@ -448,6 +489,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                ;
++---------------------------------------+---------------------------------------+
+; Name                                  ; Value                                 ;
++---------------------------------------+---------------------------------------+
+; Number of entity instances            ; 1                                     ;
+; Entity Instance                       ; dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 23                                    ;
+;     -- LPM_WIDTHB                     ; 32                                    ;
+;     -- LPM_WIDTHP                     ; 55                                    ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                              ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                    ;
+;     -- USE_EAB                        ; OFF                                   ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                  ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                    ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                    ;
++---------------------------------------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "key_ctrl:key_ctrl_inst"                                                                                                                                                         ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; key  ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -463,29 +533,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Feb 10 20:12:00 2025
+    Info: Processing started: Tue Feb 11 18:26:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DDS_signal_generator -c DDS_signal_generator
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/simulation/tb_dds_top.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/simulation/tb_dds_top.v
     Info (12023): Found entity 1: tb_dds_top
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/rtl/button_filter.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/rtl/button_filter.v
     Info (12023): Found entity 1: button_filter
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/rtl/key_ctrl.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/rtl/key_ctrl.v
     Info (12023): Found entity 1: key_ctrl
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/rtl/dds.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/rtl/dds.v
     Info (12023): Found entity 1: dds
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/simulation/tb_dds_ctrl.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/simulation/tb_dds_ctrl.v
     Info (12023): Found entity 1: tb_dds_ctrl
-Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator/rtl/dds_ctrl.v
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_projects/dds_signal_generator_freq_tuning/rtl/dds_ctrl.v
     Info (12023): Found entity 1: dds_ctrl
 Info (12021): Found 1 design units, including 1 entities, in source file ip_core_files/rom_4_waveforms/rom_4_waveforms.v
     Info (12023): Found entity 1: rom_4_waveforms
 Info (12127): Elaborating entity "dds" for the top level hierarchy
 Info (12128): Elaborating entity "key_ctrl" for hierarchy "key_ctrl:key_ctrl_inst"
-Info (12128): Elaborating entity "button_filter" for hierarchy "key_ctrl:key_ctrl_inst|button_filter:button_filter_inst3"
+Warning (10230): Verilog HDL assignment warning at key_ctrl.v(25): truncated value with size 32 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at key_ctrl.v(47): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at key_ctrl.v(49): truncated value with size 32 to match size of target (5)
+Info (12128): Elaborating entity "button_filter" for hierarchy "key_ctrl:key_ctrl_inst|button_filter:button_filter_inst1"
 Info (12128): Elaborating entity "dds_ctrl" for hierarchy "dds_ctrl:dds_ctrl_inst"
-Warning (10230): Verilog HDL assignment warning at dds_ctrl.v(27): truncated value with size 32 to match size of target (12)
-Info (10264): Verilog HDL Case Statement information at dds_ctrl.v(36): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at dds_ctrl.v(33): truncated value with size 32 to match size of target (12)
 Info (12128): Elaborating entity "rom_4_waveforms" for hierarchy "dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component"
@@ -513,19 +585,42 @@ Info (12128): Elaborating entity "decode_c8a" for hierarchy "dds_ctrl:dds_ctrl_i
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_3nb.tdf
     Info (12023): Found entity 1: mux_3nb
 Info (12128): Elaborating entity "mux_3nb" for hierarchy "dds_ctrl:dds_ctrl_inst|rom_4_waveforms:rom_4_waveforms_inst|altsyncram:altsyncram_component|altsyncram_v6a1:auto_generated|mux_3nb:mux2"
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "dds_ctrl:dds_ctrl_inst|Mult0"
+Info (12130): Elaborated megafunction instantiation "dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "23"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "55"
+    Info (12134): Parameter "LPM_WIDTHR" = "55"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_rgt.tdf
+    Info (12023): Found entity 1: mult_rgt
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following DSP element node(s):
+        Warning (14320): Synthesized away node "dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated|mac_mult7"
+        Warning (14320): Synthesized away node "dds_ctrl:dds_ctrl_inst|lpm_mult:Mult0|mult_rgt:auto_generated|mac_out8"
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 84 buffer(s)
+    Info (13019): Ignored 84 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "key[3]"
+Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 192 logic cells
+    Info (21061): Implemented 234 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4607 megabytes
-    Info: Processing ended: Mon Feb 10 20:12:01 2025
+    Info (21062): Implemented 6 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4617 megabytes
+    Info: Processing ended: Tue Feb 11 18:26:26 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

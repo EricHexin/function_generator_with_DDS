@@ -18,5 +18,5 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim software
 Sourced NativeLink script c:/fpga_dev_softwares/quartus_ii_13p0/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File DDS_signal_generator_run_msim_rtl_verilog.do already exists - backing up current file as DDS_signal_generator_run_msim_rtl_verilog.do.bak5
+Warning: File DDS_signal_generator_run_msim_rtl_verilog.do already exists - backing up current file as DDS_signal_generator_run_msim_rtl_verilog.do.bak9
 Info: Spawning ModelSim Simulation software 

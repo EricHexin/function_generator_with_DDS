@@ -1,5 +1,5 @@
 EDA Netlist Writer report for DDS_signal_generator
-Mon Feb 10 20:12:11 2025
+Tue Feb 11 18:26:36 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Feb 10 20:12:11 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 11 18:26:36 2025 ;
 ; Revision Name             ; DDS_signal_generator                  ;
 ; Top-level Entity Name     ; dds                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                           ;
-+----------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                      ;
-+----------------------------------------------------------------------------------------------------------------------+
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_85c_slow.vo     ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_0c_slow.vo      ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_min_1200mv_0c_fast.vo    ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator.vo                       ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_85c_v_slow.sdo  ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_0c_v_slow.sdo   ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_min_1200mv_0c_v_fast.sdo ;
-; D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/DDS_signal_generator_v.sdo                    ;
-+----------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                       ;
++----------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------------------------+
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_85c_slow.vo     ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_0c_slow.vo      ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_min_1200mv_0c_fast.vo    ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator.vo                       ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_85c_v_slow.sdo  ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_8_1200mv_0c_v_slow.sdo   ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_min_1200mv_0c_v_fast.sdo ;
+; D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/DDS_signal_generator_v.sdo                    ;
++----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,19 +88,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Feb 10 20:12:10 2025
+    Info: Processing started: Tue Feb 11 18:26:35 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off DDS_signal_generator -c DDS_signal_generator
-Info (204019): Generated file DDS_signal_generator_8_1200mv_85c_slow.vo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_8_1200mv_0c_slow.vo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_min_1200mv_0c_fast.vo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator.vo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_8_1200mv_85c_v_slow.sdo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_8_1200mv_0c_v_slow.sdo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_min_1200mv_0c_v_fast.sdo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file DDS_signal_generator_v.sdo in folder "D:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_8_1200mv_85c_slow.vo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_8_1200mv_0c_slow.vo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_min_1200mv_0c_fast.vo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator.vo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_8_1200mv_85c_v_slow.sdo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_8_1200mv_0c_v_slow.sdo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_min_1200mv_0c_v_fast.sdo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DDS_signal_generator_v.sdo in folder "D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4531 megabytes
-    Info: Processing ended: Mon Feb 10 20:12:11 2025
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Tue Feb 11 18:26:36 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

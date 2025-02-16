@@ -1,5 +1,5 @@
 Flow report for DDS_signal_generator
-Mon Feb 10 20:12:11 2025
+Tue Feb 11 18:26:36 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb 10 20:12:11 2025            ;
+; Flow Status                        ; Successful - Tue Feb 11 18:26:36 2025            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DDS_signal_generator                             ;
 ; Top-level Entity Name              ; dds                                              ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE10F17C8                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 192 / 10,320 ( 2 % )                             ;
-;     Total combinational functions  ; 168 / 10,320 ( 2 % )                             ;
-;     Dedicated logic registers      ; 148 / 10,320 ( 1 % )                             ;
-; Total registers                    ; 148                                              ;
+; Total logic elements               ; 217 / 10,320 ( 2 % )                             ;
+;     Total combinational functions  ; 208 / 10,320 ( 2 % )                             ;
+;     Dedicated logic registers      ; 135 / 10,320 ( 1 % )                             ;
+; Total registers                    ; 135                                              ;
 ; Total pins                         ; 15 / 180 ( 8 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 131,072 / 423,936 ( 31 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                   ;
+; Embedded Multiplier 9-bit elements ; 6 / 46 ( 13 % )                                  ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                                    ;
 +------------------------------------+--------------------------------------------------+
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 02/10/2025 20:12:00  ;
+; Start date & time ; 02/11/2025 18:26:25  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; DDS_signal_generator ;
 +-------------------+----------------------+
@@ -75,10 +75,10 @@ applicable agreement for further details.
 +--------------------------------------+------------------------------------------------------+----------------------+-------------+----------------+
 ; Assignment Name                      ; Value                                                ; Default Value        ; Entity Name ; Section Id     ;
 +--------------------------------------+------------------------------------------------------+----------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 141037552166367.173918232023816                      ; --                   ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 141037552166367.173926238512388                      ; --                   ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                   ; --                   ; --          ; tb_dds_ctrl    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                   ; --                   ; --          ; tb_dds_top     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_dds_top                                           ; --                   ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_dds_ctrl                                          ; --                   ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                          ; --                   ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                                   ; <None>               ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                      ; --                   ; --          ; eda_simulation ;
@@ -112,12 +112,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 3.0                     ; 5298 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4546 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4617 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 2.0                     ; 5296 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4546 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4621 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4523 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:08                           ;
+; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

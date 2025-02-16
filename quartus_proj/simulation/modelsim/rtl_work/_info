@@ -7,145 +7,145 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/FPGA_projects/DDS_signal_generator/quartus_proj/simulation/modelsim
+Z0 dD:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/simulation/modelsim
 T_opt
-Z1 !s110 1739149305
-VWzE^I536PlG2oY9H[JNc10
-04 10 4 work tb_dds_top fast 0
-=1-8045dd3265db-67a94ff9-361-6694
+!s110 1739251583
+VM6A3G_c2iQUh?lR5P7Oh[3
+04 11 4 work tb_dds_ctrl fast 0
+=3-8045dd3265db-67aadf7f-1c3-7fb8
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
-Z2 tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OL;O;10.5;63
 vbutton_filter
-R1
+Z2 !s110 1739251144
 !i10b 1
 !s100 03iXF@Ng=fSo68NR?^;Gj3
-IPjLaeaD4bIZB0C36bg>K`3
+I59I0Bl1_>6KmOQfJnb^2k3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1730261707
-8D:/FPGA_projects/DDS_signal_generator/rtl/button_filter.v
-FD:/FPGA_projects/DDS_signal_generator/rtl/button_filter.v
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/button_filter.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/button_filter.v
 L0 1
 Z4 OL;L;10.5;63
 r1
 !s85 0
 31
-Z5 !s108 1739149305.000000
-!s107 D:/FPGA_projects/DDS_signal_generator/rtl/button_filter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/rtl|D:/FPGA_projects/DDS_signal_generator/rtl/button_filter.v|
+Z5 !s108 1739251144.000000
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/button_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl|D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/button_filter.v|
 !i113 0
 Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z7 !s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+Z7 !s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
 vdds
-R1
+R2
 !i10b 1
-!s100 f^mZjVX1z_FVn]Sm`fHE50
-IQ<gaDMMTfd6XWXlVLWi3N2
+!s100 ^2Xd;^C3EeYZB:TPo0?SO1
+I`SVOFTc1T0<UOih09?:E90
 R3
 R0
-w1738887305
-8D:/FPGA_projects/DDS_signal_generator/rtl/dds.v
-FD:/FPGA_projects/DDS_signal_generator/rtl/dds.v
+w1739250190
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/FPGA_projects/DDS_signal_generator/rtl/dds.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/rtl|D:/FPGA_projects/DDS_signal_generator/rtl/dds.v|
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl|D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds.v|
 !i113 0
 R6
 R7
-R2
+R1
 vdds_ctrl
-R1
+R2
 !i10b 1
-!s100 B=2EjDCMklH;c[<kQAMET3
-IARk;ZOP_N;jY6e?_K?nFC0
+!s100 A[HzgdO]>f1]ZBDe3kfAf2
+I]1eO4W_`?Je6ZWhaRK_R;2
 R3
 R0
-w1739149228
-8D:/FPGA_projects/DDS_signal_generator/rtl/dds_ctrl.v
-FD:/FPGA_projects/DDS_signal_generator/rtl/dds_ctrl.v
+w1739249931
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds_ctrl.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds_ctrl.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/FPGA_projects/DDS_signal_generator/rtl/dds_ctrl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/rtl|D:/FPGA_projects/DDS_signal_generator/rtl/dds_ctrl.v|
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl|D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/dds_ctrl.v|
 !i113 0
 R6
 R7
-R2
+R1
 vkey_ctrl
-R1
+R2
 !i10b 1
-!s100 VbP=H9U:Mon7nX8aZhf^70
-Ia;=W64a8mB7O53kJJ:>hR1
+!s100 Qgk9^mk19>nOIX8canTX31
+In;[17@3ik3QG[@ML=>kVF3
 R3
 R0
-w1739149168
-8D:/FPGA_projects/DDS_signal_generator/rtl/key_ctrl.v
-FD:/FPGA_projects/DDS_signal_generator/rtl/key_ctrl.v
+w1739249876
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/key_ctrl.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/key_ctrl.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/FPGA_projects/DDS_signal_generator/rtl/key_ctrl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/rtl|D:/FPGA_projects/DDS_signal_generator/rtl/key_ctrl.v|
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/key_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl|D:/FPGA_projects/DDS_signal_generator_freq_tuning/rtl/key_ctrl.v|
 !i113 0
 R6
 R7
-R2
-vrom_4_waveforms
 R1
+vrom_4_waveforms
+!s110 1739251145
 !i10b 1
 !s100 1lKjAb6AQ7cf[=:19nfMC2
-IO^TWd?2@Y1ge@3h8`4AHB0
+IJDGlbFNinc4AOl3DCkFBf1
 R3
 R0
 w1738883791
-8D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v
-FD:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v
 L0 39
 R4
 r1
 !s85 0
 31
-R5
-!s107 D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms|D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v|
+!s108 1739251145.000000
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms|D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms/rom_4_waveforms.v|
 !i113 0
 R6
-!s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator/quartus_proj/IP_core_files/rom_4_waveforms -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
-vtb_dds_top
+!s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/IP_core_files/rom_4_waveforms -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
+vtb_dds_ctrl
+!s110 1739251575
 !i10b 1
-!s100 4QS_f`TnP0oKD23cF`:852
-I5z5@4Pe_mPD3d4i056BD<1
+!s100 5W6CVj_`1ERRj@`NFIL0U1
+Ij[>j:C1<lSTBZhV7YGLg91
 R3
 R0
-w1739069805
-8D:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation/tb_dds_top.v
-FD:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation/tb_dds_top.v
+w1739251557
+8D:/FPGA_projects/DDS_signal_generator_freq_tuning/simulation/tb_dds_ctrl.v
+FD:/FPGA_projects/DDS_signal_generator_freq_tuning/simulation/tb_dds_ctrl.v
 L0 2
 R4
 r1
 !s85 0
 31
-R5
-!s107 D:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation/tb_dds_top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation|D:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation/tb_dds_top.v|
+!s108 1739251575.000000
+!s107 D:/FPGA_projects/DDS_signal_generator_freq_tuning/simulation/tb_dds_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/../simulation|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/FPGA_projects/DDS_signal_generator_freq_tuning/simulation/tb_dds_ctrl.v|
 !i113 0
 R6
-!s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator/quartus_proj/../simulation -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+!s92 -vlog01compat -work work +incdir+D:/FPGA_projects/DDS_signal_generator_freq_tuning/quartus_proj/../simulation -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
